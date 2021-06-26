@@ -1,0 +1,11 @@
+/* * * * * * * * * * * * * *
+*          MapVis          *
+* * * * * * * * * * * * * */
+
+
+class MapVis {
+
+    constructor(){
+
+    }
+}
