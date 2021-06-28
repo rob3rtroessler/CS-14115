@@ -142,48 +142,48 @@ however, what's happening when you do the same while dealing with a string rathe
         
 - #### Dictionaries
 
-Dictionaries are used to store data values in key:value pairs. A dictionary is a collection which is ordered*, changeable and does not allow duplicates. (When we say that dictionaries are ordered, it means that the items have a defined order, and that order will not change. This will become totally clear when we move on to loops). Here's an example of a dictionary.
-
-```python
-my_dict = {
-  "brand": "Ford",
-  "model": "Mustang",
-  "year": 1964
-}
-print(my_dict)
-```
-
-Here's an example that shows that you'll run into bugs with duplicates. Also, notice that you can also grab the length of a dictionary by using Python's built-in function len()
-```python
-my_dict = {
-  "brand": "Ford",
-  "model": "Mustang",
-  "year": 1964,
-  "year": 2020
-}
-print(my_dict)
-print(len(my_dict))
-```
-
-Lastly, you can also add new key: value pairs to a dictionary. 
-
-```python
-my_dict = {
-  "brand": "VW",
-  "model": "Kaefer",
-  "year": 1995
-}
-
-# adding a new key:value pair to the dictionary
-my_dict['wheels'] = 4
-print(my_dict)
-```
+    Dictionaries are used to store data values in key:value pairs. A dictionary is a collection which is ordered*, changeable and does not allow duplicates. (When we say that dictionaries are ordered, it means that the items have a defined order, and that order will not change. This will become totally clear when we move on to loops). Here's an example of a dictionary.
+    
+    ```python
+  my_dict = {
+      "brand": "Ford",
+      "model": "Mustang",
+      "year": 1964
+  }
+  print(my_dict)
+    ```
+    
+    Here's an example that shows that you'll run into bugs with duplicates. Also, notice that you can also grab the length of a dictionary by using Python's built-in function len()
+    ```python
+  my_dict = {
+      "brand": "Ford",
+      "model": "Mustang",
+      "year": 1964,
+      "year": 2020
+  }
+  print(my_dict)
+  print(len(my_dict))
+    ```
+    
+    Lastly, you can also add new key: value pairs to a dictionary. 
+    
+    ```python
+  my_dict = {
+      "brand": "VW",
+      "model": "Kaefer",
+      "year": 1995
+  }
+    
+  # adding a new key:value pair to the dictionary
+  my_dict['wheels'] = 4
+  print(my_dict)
+    ```
     
 ### 5. Loops
 
 Now that you know more advanced data structures, let's move on to loops. We will particularly use the for loop in this class. A for loop is used for iterating over a sequence - e.g. a list or a dictionary. This is less like the for keyword in other programming languages, and works more like an iterator method as found in other object-orientated programming languages. With the for loop we can execute a set of statements, once for each item in a list or dict, etc.
 
-- #####looping through a string
+- #### looping through a string
 
     even strings are iterable objects as they consist of a sequence of characters. Example:
             
@@ -192,7 +192,7 @@ Now that you know more advanced data structures, let's move on to loops. We will
       print(character)
     ```
 
-- #####looping through a list
+- #### looping through a list
 
     you can do the same with a list. Notice that you can exchange the word after the for for anything you want. Just make sure it has a meaning that somewhat describes the content. Here's an example with fruits.
     
@@ -202,7 +202,7 @@ Now that you know more advanced data structures, let's move on to loops. We will
       print(fruit)
     ```
 
-- #####looping through a dictionary
+- #### looping through a dictionary
 
     you can also loop over dictionaries. Notice, however, that you'll only have access to the key initially. If you want the value, you will have to make use of the dictionary itself and lookup the value for that particular key. Check ot the example:
        
