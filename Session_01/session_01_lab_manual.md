@@ -3,11 +3,7 @@ layout: lab
 exclude: true
 --->
 
-<img src="cs171-logo.png" width="200">
-
 # Session 01 | Lab
-
-![Preview](session_01_preview.png?raw=true "D3 Projections")
 
 ### Learning Objectives
 
