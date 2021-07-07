@@ -1,10 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
+<html>
 <body>
-    <button onclick="console.log('button was clicked')">Click me</button>
+
+<h2>What Can JavaScript Do?</h2>
+
+<p id="demo">JavaScript can change HTML content.</p>
+
+<button onclick='document.getElementById("demo").innerHTML = "Hello JavaScript!"'>Click Me!</button>
+
 </body>
 </html>

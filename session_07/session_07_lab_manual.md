@@ -687,10 +687,7 @@ We will provide a template with a basic *HTML structure*, a *dataset* (stored in
 - The JSON array with objects is stored in the global variable ```attractionData```.
 - Data Source: TEA/AECOM 2013 Theme Index and Museum Index
 
-1. **Download template for 'week 03 lab', unzip it and open it as a new project in Webstorm:**
-
-	[https://canvas.harvard.edu/courses/74834/files/folder/labs](https://canvas.harvard.edu/courses/74834/files/folder/labs)
-    (download week-03_lab.zip)
+1. **Open the `Template` folder that was provided in the distribution code.**
     
 2. **Familiarize yourself with the provided HTML document: ```index.html```**
 
