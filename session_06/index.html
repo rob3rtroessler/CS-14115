@@ -1,0 +1,168 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>HTML grid & DOM manipulation</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/styles.css">
+
+</head>
+<body>
+
+	<!-- WRAPPER -->
+	<div class="container-fluid" style="height: 100vh; padding-top: 1vh">
+		<div class="row">
+			<div class="col-10 offset-1" style="border: thin solid grey; border-radius: 5px;">
+
+				<!-- HEADING -->
+				<div class="row d-flex justify-content-center" style="height: 10vh; padding: 0; background: #bdbdbd;">
+					<div class="align-self-center">
+						<h1>Session_06 - Dashboard with Placeholders</h1>
+					</div>
+				</div>
+
+				<!-- CONTENT -->
+				<div class="row" style="height: 70vh; background: white; padding: 0;">
+
+					<!-- LEFT -->
+					<div class="col-7">
+						<div class="row" style="height: 100%; background: lightgrey;">
+							<div id="myCarousel" class="carousel slide" data-ride="carousel" style="height: 100%; width: 100%">
+								<div class="carousel-inner" style="height: 100%; width: 100%">
+
+									<!-- MAP -->
+									<div class="carousel-item active" style="height: 100%; width: 100%">
+										<div class="col" style="height: 100%; width: 100%">
+											<div class="row" style="height: 100%; background: lightgrey; padding: 1vh">
+												<div class="col">
+
+													<!-- placeholder -->
+													<div class="row justify-content-center placeholder">
+														<div class="align-self-center">
+															Your map vis here
+														</div>
+													</div>
+													<!-- end of placeholder -->
+													<!--												<div id="mapDiv" style="height: 100%; width:100%; border: thin solid grey; border-radius: 5px; background: rgba(64,64,64,0.4);"></div>-->
+												</div>
+											</div>
+										</div>
+									</div>
+
+									<!-- TABLE -->
+									<div class="carousel-item">
+										<div class="col">
+											<div class="row" style="height: 70vh; background: lightgrey; padding: 1vh">
+													<div id="tableDiv" style="overflow-y: scroll; height: 100%; width:100%; padding: 20px; border: thin solid grey; border-radius: 5px; background: rgba(64,64,64,0.4);">
+													</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- RIGHT -->
+					<div class="col-5">
+						<div class="row" style="height: 20%; background: lightgrey; padding-left: 0vh; padding-bottom: 1vh; padding-right: 1vh; padding-top: 1vh">
+							<div class="col" style="border: thin solid grey; border-radius: 5px; background: rgba(64,64,64,0.4)">
+								<div class="row" style="height: 100%">
+									<div class="col-4">
+										<div class="row justify-content-center" style="height: 100%">
+											<button id="switchViewButton" class="btn btn-light align-self-center" type="button" onclick="switchView()">map view</button>
+										</div>
+									</div>
+									<div class="col-8">
+										<div class="row justify-content-center" style="height: 100%">
+											<select id='categorySelector' class="custom-select align-self-center" style="width: 50%" onchange="categoryChange()">
+												<option value="absCases" selected>Cases (absolute)</option>
+												<option value="absDeaths">Deaths (absolute)</option>
+												<option value="relCases">Cases (relative to population)</option>
+												<option value="relDeaths">Deaths (relative to population)</option>
+											</select>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="row" style="height: 40%; background: lightgrey; padding-left: 0vh; padding-bottom: 1vh; padding-right: 1vh; padding-top: 0vh">
+							<div class="col">
+
+								<!-- placeholder -->
+								<div class="row justify-content-center placeholder">
+									<div class="align-self-center">
+										Your bar chart here
+									</div>
+								</div>
+								<!-- end of placeholder -->
+<!--								<div id="barDiv" style="height: 100%; width:100%; border: thin solid grey; border-radius: 5px; background: rgba(64,64,64,0.4)"></div>-->
+							</div>
+						</div>
+
+						<div class="row" style="height: 40%; background: lightgrey; padding-left: 0vh; padding-bottom: 1vh; padding-right: 1vh; padding-top: 0vh">
+							<div class="col">
+								<!-- placeholder -->
+								<div class="row justify-content-center placeholder">
+									<div class="align-self-center">
+										Your bar chart II here
+									</div>
+								</div>
+								<!-- end of placeholder -->
+
+<!--								<div id="barTwoDiv" style="height: 100%; width:100%; border: thin solid grey; border-radius: 5px; background: rgba(64,64,64,0.4)"></div>-->
+
+							</div>
+						</div>
+
+					</div>
+
+				</div>
+				<div class="row" style="height: 18vh; background: #bdbdbd; padding: 0; border: 0">
+					<div class="col">
+
+						<!-- placeholder -->
+						<div class="row justify-content-center" style="height: 100%">
+							<div class="align-self-center">
+								Your brushable line chart here
+							</div>
+						</div>
+						<!-- end of placeholder -->
+<!--						<div id="brushDiv" style="height: 100%; width:100%;"></div>-->
+
+					</div>
+				</div>
+
+			</div>
+		</div>
+
+	</div>
+
+
+	<!-- - - - - - - - - - - - >
+	<    Load JS libraries     >
+	<- - - - - - - - - - - - -->
+
+<!--	&lt;!&ndash; BOOTSTRAP &ndash;&gt;-->
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+<!--	&lt;!&ndash; d3 &ndash;&gt;-->
+<!--	<script src="https://d3js.org/d3.v6.min.js"></script>-->
+<!--	<script src="https://d3js.org/d3-array.v2.min.js"></script>-->
+<!--	<script src="https://d3js.org/d3-geo.v2.min.js"></script>-->
+
+<!--	<script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>-->
+<!--	<script src="https://d3js.org/topojson.v2.min.js"></script>-->
+<!--	<script src="https://d3js.org/d3-geo.v1.min.js"></script>-->
+
+<!--	&lt;!&ndash; OWN JS &ndash;&gt;-->
+<!--	<script src="js/helpers.js"></script>-->
+<!--	<script src="js/dataTable.js"></script>-->
+<!--	<script src="js/mapVis.js"></script>-->
+<!--	<script src="js/barVis.js"></script>-->
+<!--	<script src="js/brushVis.js"></script>-->
+	<script src="js/main.js"></script>
+</body>
+</html>

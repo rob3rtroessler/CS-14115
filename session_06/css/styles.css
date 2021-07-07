@@ -1,0 +1,27 @@
+.tooltip {
+    position: absolute;
+    text-align: center;
+    font: 12px sans-serif;
+    /*  pointer-events: none;	This line needs to be removed */
+}
+.tooltip h3,h4 {
+    text-align: left;
+}
+.tooltip h4 {
+    font: 14px sans-serif;
+}
+
+.table {
+    font-size: 0.7em;
+}
+
+.x-axis, .y-axis {
+    font-size: .5em;
+}
+
+.placeholder {
+    background: rgba(64,64,64,0.4);
+    height: 100%;
+    border: thin solid grey;
+    border-radius: 5px;
+}
