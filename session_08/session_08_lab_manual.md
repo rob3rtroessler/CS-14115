@@ -3,7 +3,7 @@
 
 &nbsp;
 
-# Session 07 | Lab
+# Session 08 | Lab
 
 ![Preview](img/final_result.png?raw=true "D3 Projections")
 
@@ -37,7 +37,7 @@
 ----
 
 
-## 1)  Data Structures & Array Methods
+## 1)  Review: Data Structures & Array Methods
 
  **Task 1:** T
   
