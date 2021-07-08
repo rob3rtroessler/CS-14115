@@ -50,39 +50,3 @@ let data = [{state: "Colorado", population: 5758736, absCases: 73537, absDeaths:
     {state: "Hawaii", population: 1415872, absCases: 13041, absDeaths: 157},
     {state: "Alaska", population: 731545, absCases: 8613, absDeaths: 58},
     {state: "Vermont", population: 623989, absCases: 1817, absDeaths: 58}]
-
-console.log(data)
-// TODO: create an array 'data_final' that contains all the states, population, absCases, absDeaths, as well as relCases and relDeaths
-
-// use an array method to solve this task
-
-let data_final = []
-
-data.forEach((state, index)=>{
-
-    // start by logging state and index
-   // TODO
-
-    // state is a dictionary/object - add key value pairs for relCases and relDeaths
-    // TODO
-    //state['relCases'] = ...
-
-
-    // push each state into data_final
-    // TODO
-})
-
-// TODO: log data_final and check whether the data now contains relCases and relDeaths
-
-
-
-// TODO: sort all the states by population!
-//let sorted_states = ...
-
-// TODO: Filter the sorted data!
-//let largest_states = ...
-
-// TODO: Log the top five states
-console.log()
-
-// TODO: Create barchart with population by calling the renderBarChartLeft function. You will need to provide largest_states as arguments
