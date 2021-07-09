@@ -115,6 +115,8 @@ BrushVis.prototype.wrangleDataStatic = function() {
         )
     });
 
+    console.log('lineChart data:', vis.preProcessedData)
+
     this.wrangleDataResponsive();
 };
 
